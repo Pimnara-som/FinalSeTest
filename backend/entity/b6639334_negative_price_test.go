@@ -10,7 +10,7 @@ func TestPriceBook(t *testing.T) {
 	g := NewGomegaWithT(t)
 	p := Book{
 		Title: "kkk",
-		Price: 49.0,
+		Price: 49.99,
 		Code:  "BK123456",
 	}
 	ok, err := ValidateBook(&p)
@@ -23,7 +23,7 @@ func TestPriceBook2(t *testing.T) {
 	g := NewGomegaWithT(t)
 	p := Book{
 		Title: "kkk",
-		Price: 5000.01,
+		Price: 5000.011,
 		Code:  "BK123456",
 	}
 	ok, err := ValidateBook(&p)
