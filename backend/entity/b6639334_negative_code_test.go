@@ -11,7 +11,7 @@ func TestCodeBook(t *testing.T) {
 	p := Book{
 		Title: "kkk",
 		Price: 49.0,
-		Code:  "BK123456",
+		Code:  "d123456",
 	}
 	ok, err := ValidateBook(&p)
 	g.Expect(ok).To(BeFalse())
